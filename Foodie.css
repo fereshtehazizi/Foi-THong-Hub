@@ -1,0 +1,629 @@
+:root{
+    --text-brown-700: #db813c;
+}
+body{
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(15, 15, 15, 0.9)), url('https://i.pinimg.com/736x/e7/bc/da/e7bcdad787cf19e15588181b60591745.jpg');
+    opacity: 50;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.fadeInup{
+    animation: fade 4s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    100%{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+/*Navbar Start*/
+.navbar{
+    background: linear-gradient(rgba(31, 30, 30, 0.9), rgba(25, 24, 24, 0.9)), transparent;
+    max-height: 100px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-toggle{
+    background: none;
+}
+.orange{
+    font-family: 'Tagesschrift';
+    color: rgb(246, 113, 24);
+    font-size: 35px;
+}
+.yellow{
+    font-family: 'Tagesschrift';
+    color: #f7ad3e;
+    font-size: 35px;
+}
+.green{
+    font-family: 'Tagesschrift';
+    color: rgb(249, 236, 120);
+    font-size: 35px;
+    margin-left: 8px;
+}
+.nav-link{
+    color: #fff;
+    font-family: 'Tagesschrift';
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: var(--text-brown-700);
+}
+.dropdown-menu{
+    background-color:black;
+    color: #fff;
+    margin-top: 15px;
+    max-width: 250px;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: rgb(219, 92, 8);
+    border-radius: 8px;
+}
+.dropdown-item{
+    color: #fff;
+}
+.offcanvas{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    max-width: 80%;
+}
+/*Navbar End*/
+/*Foodie Hub Start*/
+/*Home Section Start*/
+.section{
+    min-height: 100vh;
+}
+.home{
+    margin-bottom: 20px;
+}
+.carousel-light{
+    max-width: 100%;
+    height: 100vh;
+}
+.carousel{
+    max-width: 100%;
+    height: 100%;
+}
+.carousel > *{
+    align-items: center;
+    text-align: center;
+}
+.carousel .carousel-inner img{
+    max-height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+.carousel-inner .carousel-item .carousel-caption{
+    position: absolute;
+    top: 0px;
+    max-width: 90%;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+/*Home Section End*/
+/*Restaurant Section Start*/
+.restaurant-section{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 35%;
+    align-items: center;
+    gap: 0px;
+}
+.services{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 50%;
+    align-content: center;
+    align-items: center;
+}
+.section-header{
+    margin-bottom: 60px;
+}
+.section-header h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #fff;
+}
+.roow{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 26%;
+    justify-self: center;
+    text-align: center;
+}
+.col .card{
+    width: 20rem;
+    max-width: 100%;
+    margin-top: 10px;
+    border: none;
+    background: #F5EBE2;
+    color: black;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.col .card:hover{
+    transform: scale(1.02);
+}
+.card .card-img-top{
+    max-width: 100%;
+    min-height: 200px;
+}
+.card .card-body .card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+.card .card-text{
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn{
+    background: var(--text-brown-700);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+/*Restaurant Section End*/
+/*About Section Start*/
+.inner-services{
+    max-width: 20rem;
+}
+.team-inner{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    width: 100%;
+    gap: 20px;
+}
+.team-item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+    position: relative;
+    margin: 20px;
+    border-radius: 8px;
+}
+.team-item .team-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.team-item .team-img img{
+    position: relative;
+    width: 300px;
+    object-fit: cover;
+    height: 290px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+.team-item .team-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.team-item .team-info .content h4{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(185, 75, 2);
+}
+.team-item .team-info p{
+    max-width: 100%;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.team-span span{
+    display: block;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: 'san sarif';
+    font-size: 18px;
+    color: var(--text-brown-700);
+}
+.fa{
+    font-size: 28px;
+    padding-right: 18px;
+}
+.fas{
+    font-size: 28px;
+    padding-right: 18px;
+    color: var(--text-brown-700);
+}
+a i:hover{
+    color: rgb(185, 75, 2);
+}
+.chef-img img{
+    width: 340px;
+    height: 240px;
+    object-fit: cover;
+}
+.chef-info .chef-content p{
+    max-width: 600px;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+.chef-info .chef-content h4{
+    margin-top: 15px;
+}
+.customers{
+    margin-bottom: 20px;
+}
+.customer-inner{
+    display: grid;
+    max-width: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: 32%;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.customer-card{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 48%;
+    max-width: 100%;
+    height: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background: #fff;
+    box-shadow: 0 0 5px 0 gainsboro;
+    border: 1px solid gainsboro;
+}
+.customer-profile{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25% 75%;
+    border-radius: 8px;
+}
+.customer-pre{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+}
+.bxs-badge-check{
+    margin-top: 3px;
+    font-size: 16px;
+    margin-left: 6px;
+    color: #2cb9fb;
+}
+.customer-profile .profile-info{
+    margin-top: 15px;
+    line-height: 15px;
+}
+.profile-img img{
+    width: 80px;
+    border-radius:100%;
+    object-fit: cover;
+    height: 80px;
+    cursor: pointer;
+}
+.customer-comment{
+    border: 1px ridge gainsboro;
+    box-shadow: 0 0 15px gainsboro;
+    border-radius: 8px;
+    padding: 10px;
+    height: 90px;
+    margin-top: 5px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: max-content;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/*About Section End*/
+/*Contact Section Start*/
+.contact{
+    margin-top: 80px;
+}
+.contact-title{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contact-sub-title{
+    color: var(--text-brown-700);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+.contact .contact-info{
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact-info p a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    transition: all 0.3s ease;
+}
+.contact-info a:hover{
+    color: #fff;
+}
+.contact .contact-info .icon{
+    display: inline-block;
+}
+.contact .contact-info .icon .fa{
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+.contact .contact-info .icon .fa:hover{
+    color: #fff;
+}
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .contact-row{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    max-width: 99%;
+    gap: 10px;
+}
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+.contact .contact-form .form-item .form-control{
+    max-width: 100%;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 10px 25px;
+    color: black;
+    font-size: 15px;
+}
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item .form-control::placeholder{
+    text-align: center;
+}
+.contact .contact-form .form-item textarea.form-control{
+    height: 120px;
+}
+.contact .contact-form .form-item .btn{
+    height: 50px;
+    padding: 0px 40px;
+}
+/*Contact Section End*/
+/*Footer Section Start*/
+footer{
+    height: max-content;
+    color: #fff;
+}
+.footer-h2{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'fantasy';
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.footer .icon2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.footer span{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: #fff;
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    align-self: center;
+    display: flex;
+    font-size: 15px;
+}
+.footer .a1 :hover{
+    color: purple;
+    transition: 0.3s ease;
+}
+.footer .a2 :hover{
+    color: rgb(105, 3, 3);
+    transition: 0.3s ease;
+}
+.footer .a3 :hover{
+    color: rgb(5, 97, 162);
+    transition: 0.3s ease;
+}
+.footer .a4 :hover{
+    color: #069cad;
+    transition: 0.3s ease;
+}
+.footer .a5 :hover{
+    color: #8d6098;
+    transition: 0.3s ease;
+}
+/*Footer Section End*/
+/*Foodie Hub End*/
+/*Gaa Restaurant start*/
+.menu-img{
+    width: 140px;
+    height: 120px;
+    object-fit: cover;
+}
+.serve{
+    background: rgb(43, 43, 41);
+}
+@media (min-width: 1430px){
+    .img{
+        animation: rotate 40s infinite;
+    }
+    @keyframes rotate {
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+@media (max-width: 1430px) {
+    .navbar-brand img{
+        display: none;
+    }
+    .nav-link{
+        font-size: 25px;
+    }
+    .navbar-brand span{
+        font-size: 45px;
+    }
+    .section{
+        min-height: 100%;
+    }
+    .restaurant-section, .services{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .section-header{
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .roow{
+        display: flex;
+        flex-flow: row;
+        max-width: 75%;
+        flex-wrap: wrap;
+        justify-self: center;
+    }
+    .col .card{
+        max-width: 100%;
+        justify-self: center;
+    }
+    .col .card .card-img-top{
+        max-height: 240px;
+    }
+    .team-item{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        border: none;
+    }
+    .team-item h4,
+    .team-img,.team-info p,
+    .team-info .team-span span,
+    .team-item .team-info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        line-height: 28px;
+    }
+    .customer-card{
+        margin: 20px;
+        display: block;
+        width: 100%;
+    }
+    .customer-profile{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 40% 60%;
+    }
+    .team-inner{
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: 50%;
+        grid-auto-columns: 100%;
+    }
+
+}
+@media (max-width: 750px) {
+    .contact-info p a,
+    #home-button,
+    .carousel-inner .carousel-item .carousel-caption p{
+        display: none;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .team-inner .team-item .team-info .team-content p,
+    .team-inner .team-item .team-info .team-content .team-span span{
+        font-size: 17px;
+    }
+    .navbar span,
+    .team-inner .team-item .team-info .team-content a i,
+    .carousel-inner .carousel-item .carousel-caption h3{
+        font-size: 28px;
+    }
+    .home-section{
+        height: 100%;
+    }
+    .section-header{
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .roow{
+        display: block;
+        max-width: 100%;
+    }
+    .col .card{
+        display: flex;
+        justify-self: center;
+    }
+    .customer-inner{
+        display: block;
+        align-content: center;
+        margin-bottom: -30px;
+    }
+    .customer-card{
+        display: block;
+        max-width: 90%;
+    }
+    .customer-profile{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30% 60%;
+    }
+    .contact .contact-form .contact-row{
+        display: block;
+    }
+}
