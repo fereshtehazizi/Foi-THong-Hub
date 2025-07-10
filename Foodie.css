@@ -604,6 +604,8 @@ footer{
     .roow{
         display: block;
         max-width: 100%;
+        align-items: center !important;
+        align-content: center !important;
     }
     .col .card{
         display: flex;
