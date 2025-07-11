@@ -257,6 +257,7 @@ a i:hover{
     width: 340px;
     height: 240px;
     object-fit: cover;
+    margin-bottom: 30px;
 }
 .chef-info .chef-content p{
     max-width: 600px;
@@ -528,6 +529,7 @@ footer{
         flex-flow: row;
         max-width: 75%;
         flex-wrap: wrap;
+        justify-content: center;
         justify-self: center;
     }
     .col .card{
@@ -605,7 +607,6 @@ footer{
         display: block;
         max-width: 100%;
         align-items: center !important;
-        align-content: center !important;
     }
     .col .card{
         display: flex;
